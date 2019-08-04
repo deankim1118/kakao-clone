@@ -10,52 +10,70 @@
     <title>Chat ㅣ Kakao Clone</title>
 </head>
 
-<body>
-    <!-- status bar -->
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span class="status-bar__clock">13:54</span>
+<body class="chats__body">
+    <div class="header-wrapper">
+        <!-- status bar -->
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span class="status-bar__clock">13:54</span>
+            </div>
+            <div class="status-bar__column">
+                <i class="fas fa-clock"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-wifi"></i>
+                <span class="status-bar__battery-level">50%</span>
+                <i class="fas fa-battery-half"></i>
+            </div>
         </div>
-        <div class="status-bar__column">
-            <i class="fas fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-wifi"></i>
-            <span class="status-bar__battery-level">50%</span>
-            <i class="fas fa-battery-half"></i>
-        </div>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__header-column">
+                <a href="index.html" class="header__back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <h1 class="header__title">Koowoo</h1>
+            </div>
+            <div class="header__header-column">
+                <span class="header__icon">
+                    <i class="fas fa-search"></i>
+                </span>
+                <span class="span header__icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </header>
     </div>
-    <!-- Header -->
-    <header class="header">
-        <div class="header__header-column">
-            <a href="index.html" class="header__back-btn">
-                <i class="fas fa-arrow-left"></i>
-            </a>
-            <h1 class="header__title">Kookie</h1>
-        </div>
-        <div class="header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-search"></i>
-            </span>
-            <span class="span header__icon">
-                <i class="fas fa-bars"></i>
-            </span>
-        </div>
-    </header>
     <!-- Main -->
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat__messages">
             <span class="chat__timestamp">Firday. August 01, 2019</span>
             <li class="incoming-message message">
                 <img src="images/avatar.jpg" class="message__avatar g-avatar" alt="">
                 <div class="message__content">
-                    <span class="message__author">Kookie</span>
+                    <span class="message__bubble">
+                        Dad I love you
+                    </span>
+                    <span class="message__author">Koowoo</span>
+                </div>
+            </li>
+            <li class="sent-message message">
+                <span class="massage__timestamp"></span>
+                <div class="message__content">
                     <div class="message__bubble">
-                        Congrats I love you
+                        I love you too
                     </div>
                 </div>
-                <span class="massage__timestamp"></span>
             </li>
             <li class="incoming-message message">
+                <img src="images/avatar.jpg" class="message__avatar g-avatar" alt="">
+                <div class="message__content">
+                    <span class="message__bubble">
+                        Dad I love you
+                    </span>
+                    <span class="message__author">Koowoo</span>
+                </div>
+            </li>
+            <li class="sent-message message">
                 <span class="massage__timestamp"></span>
                 <div class="message__content">
                     <div class="message__bubble">
@@ -66,14 +84,12 @@
         </ul>
     </main>
     <!-- Writing Section -->
-    <div class="chat__write">
-        <div class="chat__write-column">
+    <div class="chat__write--container">
+        <input class="chat__write" type="text" placeholder="Send Message">
+        <div class="chat__icon-left chat__icon">
             <i class="far fa-plus-square"></i>
         </div>
-        <div class="chat__write-column">
-            <input class="chat__write-input" type="text" placeholder="Send Message">
-        </div>
-        <div class="chat__write-column">
+        <div class="chat__icon-right chat__icon">
             <span class="chat__write-icon">
                 <i class="far fa-smile-wink"></i>
             </span>
