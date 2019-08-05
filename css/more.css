@@ -15,7 +15,7 @@
 }
 
 .more__btn .more__btn-title {
-    font-sizeL 14px;
+    font-size: 14px;
     margin-top: 15px;
 }
 
@@ -39,7 +39,7 @@
     background-color: #fce006;
     display: flex;
     justify-content: center;
-    align-item: center;
+    align-items: center;
     padding: 10px;
     border-radius: 10px;
 }
